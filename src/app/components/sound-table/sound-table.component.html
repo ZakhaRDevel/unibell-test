@@ -17,5 +17,5 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let sound; columns: displayedColumns;"
       (click)="selectSound(sound)"
-      [class.selected]="isSelectedSound(sound)"></tr>
+      [class.selected-row]="isSelectedSound(sound)"></tr>
 </table>
