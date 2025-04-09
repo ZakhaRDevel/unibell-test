@@ -1,6 +1,6 @@
 export interface Sound {
-  id: number;
-  name: string;
-  filename: string;
-  url: string;
+  readonly id: number;
+  readonly name: string;
+  readonly fileName: string;
+  readonly url: string;
 }

@@ -1,1 +1,13 @@
-<p>sound-player works!</p>
+<div class="player-container" *ngIf="selectedSound() as sound">
+  <h2>{{ sound.name }}</h2>
+  <audio #audioPlayer
+         controls
+         [src]="sound.url"
+         (loadeddata)="onAudioLoaded()"
+         (error)="onAudioError()">
+    Ваш браузер не поддерживает аудио элемент.
+  </audio>
+  <div class="error-message" *ngIf="hasError()">
+    Ошибка воспроизведения звука. Пожалуйста, попробуйте позже.
+  </div>
+</div>

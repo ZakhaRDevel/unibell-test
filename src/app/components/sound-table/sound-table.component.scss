@@ -1,0 +1,16 @@
+.selected-row {
+  background-color: #e3f2fd;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #bbdefb;
+  }
+}
+
+tr {
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
